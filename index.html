@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tubu Fitness Centre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body{
+            background: url('img/bground.jpg');
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: 'Baloo Thambi 2', cursive;
+        }
+        .left{
+            
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 4px;
+            
+
+
+        }
+        .left img{
+            width: 50px;
+            padding-left: 14px;
+            /* margin-top: 0%; */
+            
+        }
+        .left div{
+            text-align: center;
+            line-height: 10px;
+            font-size: 18px;
+        }
+        .mid{
+            
+            display: block;
+             width: 36%; 
+            /* height: 33%; */ 
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        
+
+        }
+        .navbar{
+            display: inline-block;
+
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 18px;
+            
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: tomato;
+        }
+        .right{
+            
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            right: 8vh;
+            top: 20px;
+            
+
+        }
+        .btn{
+            margin: 0px 9px ;
+            color: white;
+            background-color: black;
+            padding: 3px 10px;
+            border-radius: 20px;
+            border: 2px solid grey;
+            font-size: 13px;
+            cursor: pointer;
+            font-family: 'Baloo Thambi 2', cursive;
+        }
+        .btn:hover{
+            background-color: rgba(14, 13, 13, 0);
+        }
+        .container{
+            border: 2px solid white;
+            margin: 159px 500px;
+            padding: 90px 9px;
+            width: 33%;
+            border-radius: 22px; 
+        }
+        .container h1{
+            text-align: center;
+            color: coral;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 360px;
+            padding: 2px;
+            border:2px solid black;
+            margin: 5px auto;
+            border-radius: 9px;
+            font-size: 20px;
+            font-family:'Baloo Thambi 2', cursive ;
+            background-color: aliceblue;
+
+        }
+        .container button{
+            display: block;
+            width: 23%;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- Left Box for Logo -->
+            <img src="img/logoo.png" alt="">
+            <div>Tubu Fitness</div>
+
+        </div>
+        <div class="mid">
+            <!-- Mid Box for Navbar -->
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">About Us</a></li>
+                <li> <a href="#">Fitness Calculator</a></li>
+                <li> <a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- Right Box for Buttons -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Newly Opened!!!</h1>
+        <form action="noacton.php">
+            <div class="form-group">
+                <input type="text" id="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" id="" placeholder="Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" id="" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text" id="" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" id="" placeholder="Email Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
